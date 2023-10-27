@@ -1,0 +1,56 @@
+body {
+  background-color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tipcalculator {
+  width: 320px;
+  background-color: white;
+  border: 1px solid white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tipcalculator h1 {
+  font-size: 26px;
+  color: #3c3597; /* Added Blue color */
+  font-weight: bold;
+}
+
+.tipcalculator input {
+  margin: 10px 0;
+  width: 100%;
+  padding: 3px;
+}
+
+.tipcalculator button {
+  background-color: #3c3597; /* Added Blue color */
+  width: 100%;
+  margin: 10px 10px 10px 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.tipcalculator button:disabled {
+  background-color: white;
+  cursor: not-allowed;
+}
+
+.tipcalculator button:hover {
+  background-color: #3c3597;
+}
+
+
+/* Added media queries for responsiveness */
+@media (max-width: 768px) {
+  .tipcalculator {
+    width: 80%; /* Adjusted the container width */
+    margin: 10px auto; /* Horizontally added margins and centered the container  */
+  }}

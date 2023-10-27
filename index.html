@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <form id="tipForm"> 
+    <div class="tipcalculator">
+      <h4>ITMD 541 - Lab 3 - Maithili Solanki</h4>
+      <h1>Tip Calculator</h1>
+
+      <label for="billTotal">Bill Total</label> <!-- Added labels -->
+      <input type="number" id="billTotal" placeholder="Enter your bill amount" oninput="calculateTip">
+      
+      <label for="tipPercentage">Tip Percentage</label>
+      <input type="range" id="tipPercentage" min="0" max="100" step="1" oninput="calculateTip">
+      <output for="tipPercentage" id="tipPercentageOutput">0%</output>
+      
+      <label for="tipAmount">Tip Amount</label>
+      <input type="text" id="tipAmount" disabled> <!-- Disabled input -->
+      
+      <label for="totalBill">Total Bill with Tip</label>
+      <input type="text" id="totalBill" disabled> 
+    </div>
+  </form> 
+  <script src="script.js"></script>
+</body>
+</html>
